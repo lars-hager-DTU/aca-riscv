@@ -23,7 +23,7 @@ class Alu extends Module {
   io.c := reg
 }
 
-object AluMain extends App {
-  println("Generating the ALU hardware")
-  emitVerilog(new Alu(), Array("--target-dir", "generated"))
-}
+//object AluMain extends App {
+//  println("Generating the ALU hardware")
+//  emitVerilog(new Alu(), Array("--target-dir", "generated"))
+//}

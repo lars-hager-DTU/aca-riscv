@@ -33,7 +33,7 @@ class Control extends Module {
 
 }
 
-object ControlMain extends App {
-  println("Generating the Control hardware")
-  emitVerilog(new Control(), Array("--target-dir", "generated"))
-}
+//object ControlMain extends App {
+//  println("Generating the Control hardware")
+//  emitVerilog(new Control(), Array("--target-dir", "generated"))
+//}

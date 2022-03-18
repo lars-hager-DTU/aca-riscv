@@ -14,8 +14,26 @@ class Cpu extends Module{
     val diag = Output(UInt(32.W))
     })
 
-  // Dummy outputs:
-  io.diag       := 0.U
+  // Instantiate ALU
+  val alu = Module(new Alu())
+
+  // Instantiate Control
+  val control = Module(new Control())
+
+  // Instantiate RegisterFile
+  val register_file = Module(new RegisterFile())
+
+  // Instantiate Data Memory
+  val data_memory = Module(new DataMemory())
+
+  // Instantiate Data Memory
+  val instruction_memory = Module(new InstructionMemory())
+
+  // Dummy Connections:
+  io.diag := 0.U
+  alu.io.a  := 0.U
+  alu.io.b  := 0.U
+  control.io.instruction := 0.U
 }
 
 object CpuMain extends App {
