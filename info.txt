@@ -1,0 +1,9 @@
+# RISC-V Processor Paramaters
+#	Other RISC-V Projects:
+#		https://github.com/Michaelvll/RISCV_CPU/tree/master/Source
+#		https://github.com/Evensgn/RISC-V-CPU
+#		https://github.com/sevjaeg/a-little-riscy
+#	Little Endian (0x7C = [0111 1100])
+#	Program Counter:
+#		The program counter is a 64-bit register that is written at the end of every clock cycle and thus does not need a write control signal.
+#		The adder is an ALU wired to always add its two 64-bit inputs and place the sum on its output
